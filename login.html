@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Masuk | BantingStir.id</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- NAVBAR SEDERHANA -->
+    <header class="navbar">
+      <div class="nav-left">
+        <div class="logo-circle">B</div>
+        <div>
+          <div class="logo-text-title">BantingStir.id</div>
+          <div class="logo-text-sub">Jual beli mobil jadi santai</div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <a href="index.html"><button class="btn btn-outline">← Kembali</button></a>
+      </div>
+    </header>
+
+    <!-- LOGIN FORM -->
+    <div class="auth-wrapper">
+      <h2>Masuk ke BantingStir.id</h2>
+      <p class="section-subtitle">
+        Login untuk pasang iklan, simpan favorit, dan chat dengan penjual/pembeli.
+      </p>
+      <div class="card">
+        <form onsubmit="event.preventDefault(); alert('Login (contoh). Nanti hubungkan ke backend.');">
+          <div class="field">
+            <label>Email</label>
+            <input type="email" placeholder="email@contoh.com" required />
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <input type="password" placeholder="••••••••" minlength="6" required />
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top: 14px; width: 100%;">
+            Masuk
+          </button>
+        </form>
+        <div style="margin-top: 10px; font-size: 12px; color: var(--text-muted); text-align: center;">
+          Belum punya akun?
+          <a href="register.html" style="color: #16a34a;">Daftar sekarang</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>© 2025 BantingStir.id</div>
+      <div></div>
+    </footer>
+  </div>
+</body>
+</html>
