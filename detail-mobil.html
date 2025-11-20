@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Detail Mobil | BantingStir.id</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="navbar">
+      <div class="nav-left">
+        <div class="logo-circle">B</div>
+        <div>
+          <div class="logo-text-title">BantingStir.id</div>
+          <div class="logo-text-sub">Jual beli mobil jadi santai</div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <a href="index.html"><button class="btn btn-outline">← Kembali ke Beranda</button></a>
+      </div>
+    </header>
+
+    <section style="margin-top: 20px;">
+      <!-- Ini contoh detail 1 mobil. Untuk mobil lain, bisa duplikat file ini dan ganti isinya. -->
+      <h2>Toyota Avanza 1.3 G AT 2019</h2>
+
+      <div class="detail-layout">
+        <!-- KIRI: FOTO + SPECS -->
+        <div>
+          <div class="detail-main-image">
+            Foto mobil (bisa diganti img tag)
+          </div>
+
+          <div class="detail-price-block">
+            <div style="font-size: 18px; font-weight: 700;">Rp 185.000.000</div>
+            <div style="font-size: 13px; color: var(--text-muted);">
+              Jakarta • 80.000 km • Bekas
+            </div>
+          </div>
+
+          <div class="detail-specs">
+            <strong>Spesifikasi singkat</strong>
+            <div class="detail-specs-list">
+              <div>Tahun: 2019</div>
+              <div>Transmisi: Automatic</div>
+              <div>Bahan bakar: Bensin</div>
+              <div>Warna: Putih</div>
+              <div>Kepemilikan: Tangan pertama</div>
+              <div>Plat: B Jakarta</div>
+            </div>
+          </div>
+
+          <div class="field" style="margin-top: 14px;">
+            <label>Deskripsi</label>
+            <p style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">
+              Avanza 1.3 G AT 2019, pemakaian pribadi, servis rutin bengkel resmi. Interior rapih,
+              kaki-kaki senyap, AC dingin. Pajak hidup, kunci cadangan lengkap. Siap pakai.
+            </p>
+          </div>
+        </div>
+
+        <!-- KANAN: INFO PENJUAL / KONTAK -->
+        <div class="contact-card">
+          <h3 style="font-size: 15px; margin-bottom: 6px;">Kontak Penjual</h3>
+          <p style="font-size: 13px; margin-bottom: 4px;"><strong>Andi - Jakarta</strong></p>
+          <p style="font-size: 12px; color: var(--text-muted);">
+            Fast respon • Bisa COD • Bisa bantu proses kredit
+          </p>
+
+          <div class="field" style="margin-top: 12px;">
+            <label>Kirim pesan cepat</label>
+            <textarea placeholder="Contoh: Halo, mobil masih ada? Bisa nego?" rows="3"></textarea>
+          </div>
+
+          <button
+            class="btn btn-primary"
+            style="margin-top: 12px; width: 100%;"
+            onclick="alert('Ini contoh saja. Untuk chat asli perlu backend / WhatsApp API.')"
+          >
+            Kirim Pesan / Nego
+          </button>
+
+          <button
+            class="btn btn-outline"
+            style="margin-top: 8px; width: 100%;"
+            onclick="alert('Di versi produksi, tombol ini bisa diarahkan ke link WhatsApp penjual.')"
+          >
+            Hubungi via WhatsApp
+          </button>
+
+          <div style="font-size: 11px; color: var(--text-muted); margin-top: 10px;">
+            Catatan: Halaman ini masih statis. Nanti bisa dibuat dinamis (detail per mobil) pakai backend
+            atau framework seperti Laravel / Next.js.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© 2025 BantingStir.id</div>
+      <div></div>
+    </footer>
+  </div>
+</body>
+</html>
