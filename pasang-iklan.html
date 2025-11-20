@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pasang Iklan Mobil | BantingStir.id</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="navbar">
+      <div class="nav-left">
+        <div class="logo-circle">B</div>
+        <div>
+          <div class="logo-text-title">BantingStir.id</div>
+          <div class="logo-text-sub">Jual beli mobil jadi santai</div>
+        </div>
+      </div>
+      <nav class="nav-center">
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="index.html#carsSectionTitle" class="nav-link">Mobil</a>
+        <a href="pasang-iklan.html" class="nav-link active">Pasang Iklan</a>
+      </nav>
+      <div class="nav-right">
+        <a href="login.html"><button class="btn btn-outline">Masuk</button></a>
+      </div>
+    </header>
+
+    <section style="margin-top: 24px;">
+      <h2>Pasang Iklan Mobil</h2>
+      <p class="section-subtitle">
+        Isi detail mobil kamu dengan jujur dan lengkap. Iklan yang rapi biasanya lebih cepat laku.
+      </p>
+      <div class="card">
+        <form onsubmit="event.preventDefault(); alert('Iklan terkirim (contoh). Nanti hubungkan ke backend.');">
+          <div class="form-grid-2">
+            <div class="field">
+              <label>Judul iklan</label>
+              <input type="text" placeholder="Contoh: Avanza G AT 2019 siap pakai" required />
+            </div>
+            <div class="field">
+              <label>Merek</label>
+              <select required>
+                <option value="">Pilih merek</option>
+                <option>Toyota</option>
+                <option>Honda</option>
+                <option>Daihatsu</option>
+                <option>Mitsubishi</option>
+                <option>Suzuki</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Model / Tipe</label>
+              <input type="text" placeholder="Avanza 1.3 G AT" required />
+            </div>
+            <div class="field">
+              <label>Tahun</label>
+              <input type="number" min="1990" max="2025" placeholder="2019" required />
+            </div>
+            <div class="field">
+              <label>KM (kilometer)</label>
+              <input type="number" min="0" placeholder="80000" required />
+            </div>
+            <div class="field">
+              <label>Kondisi</label>
+              <select required>
+                <option value="">Pilih kondisi</option>
+                <option>Baru</option>
+                <option>Bekas</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Lokasi</label>
+              <input type="text" placeholder="Jakarta Selatan" required />
+            </div>
+            <div class="field">
+              <label>Harga (Rp)</label>
+              <input type="number" min="0" placeholder="185000000" required />
+            </div>
+          </div>
+
+          <div class="field" style="margin-top: 12px;">
+            <label>Deskripsi</label>
+            <textarea placeholder="Ceritakan kondisi mobil, riwayat servis, alasan dijual, dll." required></textarea>
+            <div class="field-note">Deskripsi lengkap bantu calon pembeli lebih percaya.</div>
+          </div>
+
+          <div class="field" style="margin-top: 12px;">
+            <label>Foto mobil</label>
+            <input type="file" accept="image/*" multiple />
+            <div class="field-note">
+              Kamu bisa upload beberapa foto (tampak depan, belakang, interior, odometer).  
+              <strong>Catatan:</strong> Saat ini hanya tampilan, file belum benar-benar dikirim ke server.
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="margin-top: 16px;">
+            Kirim Iklan
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© 2025 BantingStir.id</div>
+      <div></div>
+    </footer>
+  </div>
+</body>
+</html>
