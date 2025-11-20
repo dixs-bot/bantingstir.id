@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>BantingStir.id | Jual Beli Mobil Baru & Bekas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-left">
+        <div class="logo-circle">B</div>
+        <div>
+          <div class="logo-text-title">BantingStir.id</div>
+          <div class="logo-text-sub">Jual beli mobil jadi santai</div>
+        </div>
+      </div>
+
+      <nav class="nav-center">
+        <a href="index.html" class="nav-link active">Beranda</a>
+        <a href="#carsSectionTitle" class="nav-link">Mobil</a>
+        <a href="pasang-iklan.html" class="nav-link">Pasang Iklan</a>
+        <a href="register.html" class="nav-link">Daftar</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="login.html"><button class="btn btn-outline">Masuk</button></a>
+        <a href="pasang-iklan.html"><button class="btn btn-primary">+ Pasang Iklan</button></a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          <span>Marketplace mobil baru & bekas</span>
+        </div>
+        <h1 class="hero-title">Beli & jual mobil jadi lebih gampang.</h1>
+        <p class="hero-subtitle">
+          BantingStir.id membantu kamu menemukan mobil impian atau menjual mobil lama
+          tanpa harus pusing keliling showroom.
+        </p>
+        <div class="hero-metrics">
+          <div class="metric-pill">
+            <span>Listing aktif</span> <strong>12.540+</strong>
+          </div>
+          <div class="metric-pill">
+            <span>Kota ter-cover</span> <strong>120+</strong>
+          </div>
+          <div class="metric-pill">
+            <span>Transaksi aman</span> <strong>Rp 300M+</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILTER KECIL (UI SAJA) -->
+      <div class="hero-filter-card">
+        <div class="filter-title">
+          <span>Cari mobil sekarang</span>
+          <span class="filter-badge">UI contoh</span>
+        </div>
+        <div class="search-input-wrapper">
+          <span>🔍</span>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Cari merek / model (contoh: Avanza, HR-V, Pajero)"
+          />
+          <button class="btn btn-primary" style="padding-inline: 12px;" type="button">
+            Cari
+          </button>
+        </div>
+        <div class="select-grid">
+          <select class="select">
+            <option>Baru & Bekas</option>
+            <option>Mobil Baru</option>
+            <option>Mobil Bekas</option>
+          </select>
+          <select class="select">
+            <option>Semua Merek</option>
+            <option>Toyota</option>
+            <option>Honda</option>
+            <option>Daihatsu</option>
+            <option>Mitsubishi</option>
+            <option>Suzuki</option>
+          </select>
+          <select class="select">
+            <option>Harga berapapun</option>
+            <option>&lt; 150 juta</option>
+            <option>150 - 300 juta</option>
+            <option>300 - 600 juta</option>
+            <option>&gt; 600 juta</option>
+          </select>
+          <select class="select">
+            <option>Lokasi</option>
+            <option>Jakarta</option>
+            <option>Bandung</option>
+            <option>Surabaya</option>
+            <option>Medan</option>
+            <option>Bali</option>
+          </select>
+        </div>
+        <div class="filter-footer">
+          <span>Filter ini masih tampilan saja, belum terhubung ke data.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTING MOBIL -->
+    <h3 class="section-title" id="carsSectionTitle">Pilihan mobil populer</h3>
+    <section class="car-grid">
+      <!-- Card 1 -->
+      <a href="detail-mobil.html" class="car-card">
+        <div class="car-image">
+          Foto Mobil
+          <span class="car-badge">Bekas</span>
+        </div>
+        <div>
+          <div style="font-size: 14px; font-weight: 600;">Toyota Avanza 1.3 G AT 2019</div>
+          <div class="car-meta">80.000 km • Jakarta</div>
+          <div class="car-price">Rp 185.000.000</div>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="detail-mobil.html" class="car-card">
+        <div class="car-image">
+          Foto Mobil
+          <span class="car-badge new">Baru</span>
+        </div>
+        <div>
+          <div style="font-size: 14px; font-weight: 600;">Honda HR-V 1.5 E CVT 2024</div>
+          <div class="car-meta">Baru • Bandung</div>
+          <div class="car-price">Rp 415.000.000</div>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="detail-mobil.html" class="car-card">
+        <div class="car-image">
+          Foto Mobil
+          <span class="car-badge">Bekas</span>
+        </div>
+        <div>
+          <div style="font-size: 14px; font-weight: 600;">Daihatsu Xenia R Sporty 2018</div>
+          <div class="car-meta">95.000 km • Surabaya</div>
+          <div class="car-price">Rp 165.000.000</div>
+        </div>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="detail-mobil.html" class="car-card">
+        <div class="car-image">
+          Foto Mobil
+          <span class="car-badge">Bekas</span>
+        </div>
+        <div>
+          <div style="font-size: 14px; font-weight: 600;">Mitsubishi Pajero Sport Dakar 2020</div>
+          <div class="car-meta">40.000 km • Medan</div>
+          <div class="car-price">Rp 555.000.000</div>
+        </div>
+      </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div>© 2025 BantingStir.id · Bantu jual beli mobil lebih aman & transparan.</div>
+      <div>
+        <a href="#" style="margin-right: 10px;">Ketentuan Layanan</a>
+        <a href="#">Kebijakan Privasi</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
